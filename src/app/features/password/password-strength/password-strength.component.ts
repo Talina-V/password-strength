@@ -1,7 +1,7 @@
 import {Component, Input} from '@angular/core';
 
-import {VALIDATE_CONFIG} from "../../app.config";
-import {CustomValidators} from "../../shared/validators/custom.validators";
+import {VALIDATE_CONFIG} from "../../../app.config";
+import {CustomValidators} from "../../../shared/validators/custom.validators";
 
 @Component({
     selector: 'app-password-strength',

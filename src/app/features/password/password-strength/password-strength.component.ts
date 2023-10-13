@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 
 import {VALIDATE_CONFIG} from "../../../app.config";
 import {CustomValidators} from "../../../shared/validators/custom.validators";
@@ -6,7 +6,8 @@ import {CustomValidators} from "../../../shared/validators/custom.validators";
 @Component({
     selector: 'app-password-strength',
     templateUrl: './password-strength.component.html',
-    styleUrls: ['./password-strength.component.scss']
+    styleUrls: ['./password-strength.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PasswordStrengthComponent {
     @Input() password: string = '';
